@@ -12,6 +12,8 @@ import {
   Col,
   InputNumber,
 } from "rsuite";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "rsuite/dist/rsuite.min.css";
 import "./styles.css";
 import Navbar from "./MainComponents/Navbar";
@@ -186,15 +188,21 @@ class GreenWorld extends React.Component {
     );
   }
 }
-// const element = <GreenWorld></GreenWorld>
+// const element = <GreenWorld></GreenWorld>;
+// ReactDOM.render(element, document.getElementById("root"));
+
 // ReactDOM.render(
-//   element,
-//   document.getElementById('root')
+//   <React.StrictMode>
+//     <Router>
+//       <GreenWorld />
+//     </Router>
+//   </React.StrictMode>,
+//   document.getElementById("root")
 // );
 
 ReactDOM.render(
   // <React.StrictMode>
-    <App />
+  <App />,
   // </React.StrictMode>,
-  ,document.getElementById("root")
+  document.getElementById("root")
 );
